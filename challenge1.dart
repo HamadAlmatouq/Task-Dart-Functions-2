@@ -1,13 +1,11 @@
-void main(){
-printName();
-int birthYear = 2001;
-printAge(birthYear);
+void main() {
+  printName();
+  int birthYear = 2001;
+  printAge(birthYear);
 
+  printHello("Hamad", "en");
 
-printHello("Hamad", "en");
-
-printMax(5, 10);
-
+  printMax(5, 10);
 }
 
 /**
@@ -28,8 +26,9 @@ void printName() {
  * - Age = current year - birth
  */
 void printAge(int birthYear) {
-  print("Age = ${2024 - birthYear}");
+  print("Age = ${2024 - birthYear}?");
 }
+
 /**
  * Task 3:
  * Create a function called `printHello`
@@ -40,35 +39,25 @@ void printAge(int birthYear) {
  * -- fr: it should print `Bonjour NAME`
  * -- tr: it should print `Merhaba NAME`
  */
- void printHello(name, language) {
+void printHello(name, language) {
+  switch (language) {
+    case "en":
+      print("Hello name");
+      break;
 
-switch(language){
+    case "es":
+      print("Hola name");
+      break;
 
-case "en":
+    case "fr":
+      print("Bonjour name");
+      break;
 
- print("Hello name");
- break;
-
-
-case "es":
-
- print("Hola name");
- break;
-
-
-case "fr":
-
- print("Bonjour name");
- break;
-
-
-case "tr":
-
- print("Merhaba name");
- break;
+    case "tr":
+      print("Merhaba name");
+      break;
+  }
 }
-
- }
 
 /**
  * Task 4:
@@ -77,12 +66,10 @@ case "tr":
  * - and prints out the bigger number
  */
 
- printMax(int x, int y) {
-  if(x<y){
+printMax(int x, int y) {
+  if (x < y) {
     print(y);
-  }
-  else
-  {
+  } else {
     print(x);
   }
- }
+}
