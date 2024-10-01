@@ -26,7 +26,7 @@ void printName() {
  * - Age = current year - birth
  */
 void printAge(int birthYear) {
-  print("Age = ${2024 - birthYear}?");
+  print("Age = ${2024 - birthYear}");
 }
 
 /**
@@ -43,19 +43,15 @@ void printHello(name, language) {
   switch (language) {
     case "en":
       print("Hello name");
-      break;
 
     case "es":
       print("Hola name");
-      break;
 
     case "fr":
       print("Bonjour name");
-      break;
 
     case "tr":
       print("Merhaba name");
-      break;
   }
 }
 
