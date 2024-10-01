@@ -6,8 +6,19 @@
  * e.g.
  * greet("Hamza") => prints "Hello Hamza"
  */
+void main() {
+  greet("Hamza");
+
+  print(isOdd(4));
+
+  print(squareOrDouble(5));
+
+  print(oddsSmallerThan(6));
+}
+
 void greet(String name) {
   // Your code here
+  print("Hello $name");
 }
 
 /**
@@ -21,6 +32,11 @@ void greet(String name) {
  */
 bool isOdd(int n) {
   // Your code here
+  if (n % 2 == 1) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 /**
@@ -34,6 +50,7 @@ bool isOdd(int n) {
  */
 int oddsSmallerThan(int n) {
   // Your code here
+  return (n ~/ 2);
 }
 
 /**
@@ -48,4 +65,9 @@ int oddsSmallerThan(int n) {
  */
 int squareOrDouble(int n) {
   // Your code here
+  if (n % 2 == 1) {
+    return n * n;
+  } else {
+    return n + n;
+  }
 }

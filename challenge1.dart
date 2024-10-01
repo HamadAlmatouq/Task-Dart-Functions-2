@@ -42,16 +42,16 @@ void printAge(int birthYear) {
 void printHello(name, language) {
   switch (language) {
     case "en":
-      print("Hello name");
+      print("Hello $name");
 
     case "es":
-      print("Hola name");
+      print("Hola $name");
 
     case "fr":
-      print("Bonjour name");
+      print("Bonjour $name");
 
     case "tr":
-      print("Merhaba name");
+      print("Merhaba $name");
   }
 }
 
